@@ -1,0 +1,415 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="img/logo.png" sizes="16x16" type="image/png">
+
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Link -->
+
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-2">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="Logo" class="logo" style="max-height: 40px;"> <!-- Ajusta el tamaño del logo -->
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mb-0">
+                  <li class="nav-item"><a class="nav-link" href="Index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="modelos.html">Modelos</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Cotizaciones.html">Cotizacion</a></li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <!-- Inicio  -->
+    <div class="home">
+        <div class="content">
+            <h5>Bienvenidos a Autoclick</h5>
+            <h1>Tenemos <span class="changecontent"></span></h1>
+            <p>Las mejores piezas del mercado las encuentras aqui. Tenemos todo tipo de productos para tu vehiculo.</p>
+            <a href="#book">Ver piezas</a>
+        </div>
+    </div>
+
+    <!-- Piezas -->
+    <section class="book" id="book">
+      <div class="container">
+
+        <div class="main-text">
+          <h1><span>C</span>itas</h1>
+        </div>
+        
+        <div class="row">
+
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="img/1.png" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <form action="#">
+
+              <input type="text" class="form-control" placeholder="Que busca" required><br>
+              <input type="text" class="form-control" placeholder="Marca y modelo" required><br>
+              <input type="date" class="form-control" placeholder="Dia previsto" required><br>
+              <input type="text" class="form-control" placeholder="En caso de" required><br>
+              <textarea class="form-control" rows="5" name="text" placeholder="Ingresa tu nombre y detalles"></textarea>
+              <input type="submit" value="Realizar cita" class="submit" required>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="packages" id="packages">
+      <div class="container">
+        
+        <div class="main-txt">
+          <h1><span>P</span>roductos destacados</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="img/pr1.png" alt="">
+              <div class="card-body">
+                <h3>Aros Deportivos</h3>
+                <p>Mejora el rendimiento y la apariencia de tu auto con nuestros aros deportivos de aleación ligera!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Precio: <strong>$178</strong></h6>
+                <a href="#book">Comprar</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="img/pr8.png" alt="">
+              <div class="card-body">
+                <h3>Aros Off-Road</h3>
+                <p>Conquista cualquier terreno con nuestros aros off-road! que esperas para aprovechar</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Precio: <strong>$200</strong></h6>
+                <a href="#book">Comprar</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="img/pr3.png" alt="">
+              <div class="card-body">
+                <h3>Volante Deportivo</h3>
+                <p>Mejora la experiencia de manejo con nuestro volante deportivo de cuero y fibra de carbono!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked "></i>
+                </div>
+                <h6>Precio: <strong>$300</strong></h6>
+                <a href="#book">Comprar</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="img/pr8.png" alt="">
+              <div class="card-body">
+                <h3>Aros de Lujo</h3>
+                <p>Eleva la apariencia de tu vehículo con nuestros exclusivos aros de lujo!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Precio: <strong>$200</strong></h6>
+                <a href="#book">Comprar</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="img/pr5.png" alt="">
+              <div class="card-body">
+                <h3>Aros Clásicos Cromados</h3>
+                <p>Añade un toque de elegancia y estilo retro a tu vehículo con nuestros aros cromados!</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked "></i>
+                  <i class="fa-solid fa-star checked"></i>
+                </div>
+                <h6>Precio: <strong>$500</strong></h6>
+                <a href="#book">Comprar</a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <img src="img/pr6.png" alt="">
+              <div class="card-body">
+                <h3>Tranca palancas</h3>
+                <p>La seguridad es lo mas importante, echa un vistazo! Ven por la tuya.</p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                <h6>Precio: <strong>$100</strong></h6>
+                <a href="#book">Comprar</a>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </section>
+ 
+    <!-- Servicios -->
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>S</span>ervicios</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="bi bi-gear-fill"></i>
+              <div class="card-body">
+                <h3>Piezas y equipos</h3>
+                <p>Venta de todo tipo de productos para tu vehiculo.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="bi bi-car-front-fill"></i>
+              <div class="card-body">
+                <h3>Autos</h3>
+                <p>ventas de autos nuevos y usados, al mejor precio.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="bi bi-chat-fill"></i>
+              <div class="card-body">
+                <h3>Asesoramiento</h3>
+                <p>Asesoramiento para compras de equipos.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-globe-asia"></i>
+              <div class="card-body">
+                <h3>Importar</h3>
+                <p>Importamos la piezas que necesites de tu vehiculo.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="fas fa-plane"></i>
+              <div class="card-body">
+                <h3>Envios internacionales</h3>
+                <p>Tenemos envios internacionales a cualquier parte.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+
+            <div class="card">
+              <i class="bi bi-headset"></i>
+              <div class="card-body">
+                <h3>Asistencia</h3>
+                <p>Asistencia tecnica, las 24 horas del dia.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+ 
+
+    <!-- Galeria -->
+    <section class="gallary" id="gallary">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1><span>G</span>aleria de vehiculos</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="img/aut1.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="img/aut2.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="img/aut3.png" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="img/aut4.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="img/aut5.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="img/car2-removebg-preview.png" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Nosotros -->
+    <section class="about" id="about">
+      <div class="container">
+
+        <div class="main-txt">
+          <h1>Sobre <span>Nosotros</span></h1>
+        </div>
+
+        <div class="row" style="margin-top: 50px;">
+
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="img/c1.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>Conocenos</h2>
+            <p>Nuestra misión es ofrecer soluciones innovadoras, estratégicas y altamente efectivas, diseñadas específicamente para abordar las necesidades y desafíos de nuestros clientes en un mercado en constante cambio. Nos comprometemos a acompañarlos en cada paso, proporcionando herramientas y servicios que no solo optimicen sus procesos, sino que también impulsen su crecimiento y contribuyan al cumplimiento de sus objetivos empresariales. Creemos que nuestra dedicación a la excelencia y nuestra capacidad para adaptarnos a las exigencias del entorno hacen de nosotros un socio confiable en el camino hacia el éxito.</p>
+            <button id="about-btn">Read More...</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer Start -->
+    <footer id="footer">
+      <p><br></p>
+      <div class="copyright">
+        <p>&copy;Derechos reservados / Autoclick</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

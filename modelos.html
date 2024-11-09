@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="img/logo.png" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="style2.css"> 
+</head>
+<style>
+    /* Estilos para los botones flotantes */
+    .btn-fixed {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #007bff; /* Color de fondo del botón */
+        color: white; /* Color del texto */
+        border: none; /* Sin borde */
+        border-radius: 50%; /* Botón redondeado */
+        width: 60px; /* Ancho del botón */
+        height: 60px; /* Alto del botón */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+    }
+
+    .btn-fixed:hover {
+        background-color: #0056b3; /* Color de fondo al pasar el ratón */
+    }
+</style>
+<body>
+
+    <button id="darkModeToggle" class="btn-fixed">
+        <i class="fas fa-moon"></i> 
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbar-start">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="modelos.html">Modelos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">Productos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>          
+
+    <!-- Categoria -->
+    <div class="container my-5">
+        <br>
+        <h2 class="text-center mb-4">Marcas</h2>
+        <div id="productCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card bg-light text-dark">
+                                <img src="img/m1.png" class="card-img-top" alt="Ear Phones 83D">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-uppercase">Audi</h5>
+                                    <a href="Productos.html" class="btn btn-transparent">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card bg-light text-dark">
+                                <img src="img/m2.png" class="card-img-top" alt="Wireless Head Phones">
+                                <div class="card-body">
+                                    <h5 class="card-title text-uppercase text-center">Chervolet</h5>
+                                    <a href="Productos.html" class="btn btn-transparent">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card bg-light text-dark">
+                                <img src="img/m3.png" class="card-img-top" alt="E5D Wireless Earphones">
+                                <div class="card-body">
+                                    <h5 class="card-title text-uppercase text-center">Peugeot</h5>
+                                    <a href="Productos.html" class="btn btn-transparent">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card bg-light text-dark">
+                                <img src="img/m4.png" class="card-img-top" alt="Noise Cancelling Headphones">
+                                <div class="card-body">
+                                    <h5 class="card-title text-uppercase text-center">Changai</h5>
+                                    <a href="Productos.html" class="btn btn-transparent">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card bg-light text-dark">
+                                <img src="img/m5.png" class="card-img-top" alt="Bluetooth Speaker">
+                                <div class="card-body">
+                                    <h5 class="card-title text-uppercase text-center">Mercedes Benz</h5>
+                                    <a href="Productos.html" class="btn btn-transparent">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card bg-light text-dark">
+                                <img src="img/lm6.png" class="card-img-top" alt="Smart Watch">
+                                <div class="card-body">
+                                    <h5 class="card-title text-uppercase text-center">Honda</h5>
+                                    <a href="Productos.html" class="btn btn-transparent">Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Division -->
+    <section class="honda-section">
+        <div class="container">
+          <h2 class="title"> CONDUCE TU SUEÑO </h2>
+          <p class="description">
+            Descubre nuestra amplia gama de vehículos para   |
+|                     cada estilo de vida.
+          </p>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="img/c1.jpg" alt="Banner" class="img-fluid">
+        <div class="banner-text">
+            <h3>¡Descubre Nuestros Nuevos Modelos!</h3>
+            <p>Ofertas exclusivas solo por tiempo limitado.</p>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <section class="honda-section">
+        <div class="container">
+          <h2 class="title"> TU AVENTURA COMIENZA AQUÍ</h2>
+          <p class="description">
+            Explora nuestros modelos y encuentra el auto     |
+            |                  perfecto para ti..
+          </p>
+        </div>
+    </section>
+
+    <!-- Iframe -->
+    <div class="container mt-5">
+        <h1 class="section-title">Enlaces de Interés</h1><br>
+    
+        <div class="row">
+            <!-- Video de YouTube -->
+            <div class="col-md-6">
+                <div class="iframe-container">
+                    <h2 class="section-title">Video de Interés</h2>
+                    <iframe src="https://www.youtube.com/embed/cwUa_d1HTcs" 
+                            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <!-- Mapa de Google Maps -->
+            <div class="col-md-6">
+                <div class="iframe-container">
+                    <h2 class="section-title">Nuestra Ubicación</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d795.4977100032431!2d-69.94728751766705!3d18.481568802291736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f15b5728c7%3A0x83f9dcd57ee8b76a!2sPeravia%20Motors!5e0!3m2!1ses!2sdo!4v1730817467348!5m2!1ses!2sdo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Boletin -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Suscríbete a Nuestro Boletín</h2>
+        <p class="text-center mb-4">Recibe las últimas noticias y actualizaciones directamente en tu correo electrónico.</p>
+        
+        <!-- División con estilo -->
+        <div class="divider my-4"></div>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="newsletterForm" action="#" method="post" class="bg-light p-4 rounded" onsubmit="showAlert(event)">
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="custom-footer text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mt-4">
+                    <h5>Síguenos en</h5>
+                    <div>
+                        <a href="https://www.facebook.com" class="text-white me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.twitter.com" class="text-white me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.instagram.com" class="text-white me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com" class="text-white" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                    </div>                    
+                    <!-- Enlace mailto en la sección de contacto -->
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 AutoClick. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>  
+
+
+    <!-- Botón de Modo Oscuro -->
+    <button id="darkModeToggle" class="btn btn-floating">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showAlert(event) {
+            event.preventDefault(); // Evita que el formulario se envíe realmente
+            const emailInput = document.getElementById('email');
+            const email = emailInput.value;
+            alert(`¡Gracias por suscribirte, ${email}! Estás en nuestra lista de boletín.`);
+            emailInput.value = ''; // Limpia el campo de entrada después de mostrar la alerta
+        }
+    </script>
+
+    <script>
+        // Modo oscuro
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            darkModeToggle.innerHTML = document.body.classList.contains('dark-mode') ? 
+                '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        });
+    </script>
+
+    <!-- Botón fijo para redirigir a la página de cotizaciones -->
+    <a href="cotizaciones.html" class="btn btn-fixed">
+        <i class="fas fa-file-invoice-dollar">Cotizar</i> <!-- Ícono de Font Awesome -->
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,235 @@
+
+body {
+    background-color: #f8f8f8; /* Fondo claro por defecto */
+}
+
+.navbar a {
+    font-weight: 450;
+    font-size: 16px;
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Ajusta la altura según el tamaño que prefieras */
+    width: auto; /* Mantiene la proporción */
+}
+
+.logo {
+    height: 40px;
+    width: auto; 
+}
+
+/* Botones transparentes */
+.btn-transparent {
+    background-color: transparent; /* Fondo transparente */
+    color: #ff0000; /* Color del texto */
+    border: none; /* Sin borde */
+}
+
+.btn-transparent:hover {
+    background-color: #ff0000; /* Color de fondo al pasar el ratón */
+    color: white; /* Color del texto al pasar el ratón */
+}
+
+/* Estilo para mantener las tarjetas del mismo tamaño */
+.card-body {
+    min-height: 150px; /* Altura mínima para el contenido de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido se distribuya uniformemente */
+}
+
+.card img {
+    height: 150px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+    width: 100%; /* Asegurar que la imagen ocupe todo el ancho de la tarjeta */
+}
+
+.carousel-inner {
+    position: relative; /* Permitir posicionamiento absoluto de los controles */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Ajustar para que quede centrado */
+    z-index: 10; /* Asegurar que los botones están por encima de otros elementos */
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif; /* Usa la fuente Poppins */
+    font-weight: 700; /* Peso de la fuente */
+}
+
+/* Espaciado adicional */
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+/* Estilo del banner */
+.banner {
+    position: relative; /* Para posicionar el texto sobre la imagen */
+    color: white; /* Color del texto del banner */
+    margin: top 0;; /* Margen superior */
+    height: 200px; /* Altura del banner */
+    overflow: hidden; /* Ocultar el exceso de la imagen */
+}
+
+.banner img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    height: 100%; /* Asegura que la imagen ocupe toda la altura del banner */
+    object-fit: cover; /* Recorta la imagen para mantener la proporción */
+}
+
+.banner-text {
+    position: absolute; /* Para superponer el texto */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar para centrar correctamente */
+    text-align: center; /* Centrar el texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.honda-section {
+text-align: center;
+background-color: #f0f0f0; /* Puedes cambiar el color de fondo */
+padding: 50px 0;
+}
+
+.container {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.title {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.description {
+font-size: 18px;
+color: #666;
+margin-bottom: 20px;
+}
+
+.gallery-card {
+    border: 1px solid #dee2e6; /* Borde suave */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.2s; /* Transición suave al pasar el ratón */
+}
+
+.gallery-card:hover {
+    transform: scale(1.10); /* Aumentar el tamaño de la tarjeta al pasar el ratón */
+}
+
+.gallery-card img {
+    height: 150px; /* Altura fija para las imágenes */
+    object-fit:contain; /* Mantener la proporción de la imagen */
+}
+
+.bg-light {
+    background-color: #f8f9fa !important; /* Color claro para el fondo */
+}
+
+/* Estilo para el botón fijo */
+.btn-fixed {
+    position: fixed;
+    bottom: 10px; /* Distancia desde la parte inferior */
+    right: 10px; /* Distancia desde el lado derecho */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Altura del botón */
+    border-radius: 50%; /* Botón circular */
+    background-color: #ab3434; /* Color del botón */
+    color: white; /* Color del ícono */
+    display: flex; /* Centra el ícono */
+    align-items: center; /* Centra el ícono verticalmente */
+    justify-content: center; /* Centra el ícono horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.btn-fixed:hover {
+    background-color: #c72216; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.0); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+/* Estilo del ícono en el botón */
+.btn-fixed i {
+    font-size: 15px; /* Tamaño del ícono */
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Relación de aspecto 16:9 */
+    margin-bottom: 30px; /* Espacio entre iFrames */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra del contenedor */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados para el iframe */
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.custom-footer {
+    background-color: #051946; /* Color de fondo claro */
+}
+
+/* Estilo para el formulario del boletín */
+#newsletterForm {
+    background-color: #f8f9fa; /* Fondo más claro */
+    border: 1px solid #dee2e6; /* Borde suave */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+}
+
+#newsletterForm:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif; /* Usa la fuente Poppins */
+    font-weight: 700; /* Peso de la fuente */
+    color: #343a40; /* Color del título */
+}
+
+p {
+    color: #6c757d; /* Color gris para el texto */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color de fondo del botón */
+    border-color: #007bff; /* Color del borde del botón */
+    transition: background-color 0.3s ease; /* Transición suave para el color del botón */
+}
+
+.btn-primary:hover {
+    background-color: #b30000; /* Color de fondo al pasar el mouse */
+    border-color: #b30000; /* Color del borde al pasar el mouse */
+}
+
+.divider {
+    height: 3px; /* Altura de la línea */
+    background-color: #ff0000; /* Color de la línea */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 0 auto; /* Centrar la división */
+    width: 50%; /* Ancho de la división */
+}
+
